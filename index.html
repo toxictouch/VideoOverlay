@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML Stream Video Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="src/Site.js"></script>
+        <link href="src/Site.css" rel="stylesheet"/>
+    </head>
+    <body>
+        
+        <!-- Overlay for video stream -->
+        <div id="videoNav" class="overlay">
+            <a href="#" class="closebtn" onclick="closeNav();return false;">&times;</a>
+            <div class="overlay-content">
+                <!-- For more information regarding the video tags, follow this links:
+                https://www.w3schools.com/tags/tag_video.asp
+                https://www.w3schools.com/css/css_rwd_videos.asp  -->
+                <video id="videoControl" controls>
+                    Your browser does not support the video tag
+                </video>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- Remainder of page content -->
+        <h2>Video Sample</h2>
+        <p>Click on an option from below to open the full-screen overlay video streamer.</p>
+
+        
+        
+        <!-- Original open-overlay element. Saved for unicode "hamburger" menu
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>-->
+        
+        
+        
+        <a href="#" id="videoLink1" onclick="openNav('Fry.mp4');return false;" style="font-size:30px;cursor:pointer">Video 1</a>
+        
+        <hr/>
+        
+        <a href="#" id="videoLink2" onclick="openNav('HpEnvy.mp4');return false;" style="font-size:30px;cursor:pointer">Video 2</a>
+        
+        <hr/>
+        
+        <button id="videoButton" class="button" type="button" onclick="openNav('PetsYe.mp4');" >Video 3</button>
+    </body>
+</html>
